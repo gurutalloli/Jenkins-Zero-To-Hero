@@ -19,7 +19,7 @@ pipeline {
     }
    stage ('DB') {
      agent {
-       docker {image 'batlley/alpine-mysql'}
+       docker {image 'mysql'}
 	}
      steps {
 	sh 'mysql --version'
